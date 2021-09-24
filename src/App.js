@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import React,{useState,useEffect} from "react";
+import Projects from './components/projects'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <h3>loading...</h3>
         )
       }
+      <Projects/>
     </div>
   );
 }

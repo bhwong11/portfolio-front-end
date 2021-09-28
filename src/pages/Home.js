@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import ProjectModel from "../models/project";
+
 import Projects from '../components/projects';
 import Header from '../components/header';
 import About from '../components/about';
@@ -9,16 +11,30 @@ import Contact from '../components/contact';
 
 function Home(props) {
 
+  const [projects,setProjects] = useState(null)
+
+  useEffect(function(){
+    ProjectModel.all().then((json)=>{
+        setProjects(json.projects)
+    })
+  },[])
+
   return (
+    <>
+    {projects ? (
     <>
     <Header/>
     <About/>
     <Skills/>
-    <Projects/>
+    <Projects projects ={projects} />
     <Resume/>
     <Contact/>
     </>
-  );
+    ):(
+      <div>Loading...</div>
+    )}
+    </>
+    );
 }
 
 export default Home;

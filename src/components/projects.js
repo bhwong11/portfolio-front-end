@@ -3,9 +3,9 @@ import ProjectModel from '../models/project'
 import Project from './project'
 import '../css/projects.css'
 
-function Projects(){
+function Projects(props){
 
-    const [projects,setProjects] = useState(null);
+    const [projects,setProjects] = useState(props.porjects);
 
     useEffect(function(){
         ProjectModel.all().then((json)=>{
@@ -21,6 +21,7 @@ function Projects(){
 
     return(
         <div id = "projects">
+            <h2>Projects</h2>
             {
             projects? <div class="projects__container">
                 {generateProjects()}

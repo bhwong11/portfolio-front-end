@@ -29,7 +29,7 @@ function Login(props) {
           console.log(json)
           setUser(json.data)
           console.log('IS LOGIN',isLoggin)
-          props.history.push('/projects/new')
+          props.history.push('/projects')
         })
       }
       console.log(json)

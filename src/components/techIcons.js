@@ -1,10 +1,12 @@
 import React,{useState,useEffect} from 'react';
+import "../css/techIcon.css"
 
-function TechIcon(){
+function TechIcon(props){
 
     return(
-        <div>
+        <div class = "tech-icon">
             Tech Icon
+            <image src = {props.image} alt={props.title}/>
         </div>
 
     )

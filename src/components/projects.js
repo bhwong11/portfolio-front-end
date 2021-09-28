@@ -19,7 +19,7 @@ function Projects(){
     }
 
     return(
-        <div>
+        <div id = "projects">
             {
             projects? <div>
                 {generateProjects()}

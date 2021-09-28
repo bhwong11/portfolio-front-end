@@ -1,0 +1,9 @@
+#about{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.about__image{
+    width:50vw;
+}

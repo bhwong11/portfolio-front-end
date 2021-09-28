@@ -4,6 +4,7 @@ import { useRecoilState } from "recoil";
 import { userState } from "../recoil/atoms";
 import { NavLink } from "react-router-dom";
 import UserModel from "../models/User";
+import { HashLink } from 'react-router-hash-link';
 
 function Navbar(props) {
   const [user, setUser] = useRecoilState(userState);
@@ -31,9 +32,24 @@ function Navbar(props) {
 
   return (
     <header>
-      <NavLink exact to='/'>
+      <HashLink exact to='/'>
         Home
-      </NavLink>
+      </HashLink>
+      <HashLink exact to='/#about'>
+        about
+      </HashLink>
+      <HashLink exact to='/#skills'>
+        skills
+      </HashLink>
+      <HashLink exact to='/#projects'>
+        projects
+      </HashLink>
+      <HashLink exact to='/#resume'>
+        resume
+      </HashLink>
+      <HashLink exact to='/#contact'>
+        contact
+      </HashLink>
       <nav className='top-navigation__right'>
         {user ? (
           <>

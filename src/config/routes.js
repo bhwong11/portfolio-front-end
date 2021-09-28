@@ -16,32 +16,12 @@ import DeleteProject from "../pages/DeleteProject";
 
 function Routes(props) {
 
-//    const [user, setUser] = useRecoilState(userState);
-//
-//    useEffect(function(){
-//        if(localStorage.getItem("uid")){
-//            console.log(localStorage.uid)
-//            UserModel.show().then(json=>{
-//                console.log(json)
-//                setUser(json.data)
-//                console.log('USER',user)
-//                console.log(isLoggin)
-//            })
-//        }else{
-//            console.log("no token")
-//        }
-//    },[])
-
     let isLoggin = useRecoilValue(logginState);
-    console.log('LOGGED IN',isLoggin)
 
   return (
     <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/login' component={Login} />
-      {/*<Route exact path='/projects/new' component={NewProject} />
-        <Route path='/projects/:id/update' component={UpdateProject} />
-        <Route path='/projects/:id/delete' component={DeleteProject} />*/}
       {isLoggin ? (
         <Switch>
           <Route exact path='/projects/new' component={NewProject} />

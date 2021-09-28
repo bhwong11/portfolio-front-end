@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from "react";
-import Projects from '../components/projects'
+import Projects from '../components/projects';
+import Header from '../components/header';
+import About from '../components/about';
+import Skills from '../components/skills';
+import Resume from '../components/resume';
+import Contact from '../components/contact';
+
 
 function Home(props) {
 
   return (
     <>
-    <div>Home</div>
+    <Header/>
+    <About/>
+    <Skills/>
     <Projects/>
+    <Resume/>
+    <Contact/>
     </>
   );
 }

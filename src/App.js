@@ -1,7 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
 import React,{useState,useEffect} from "react";
-import Projects from './components/projects'
 import Routes from './config/routes'
 import Navbar from './nav/navbar'
 
@@ -31,7 +29,6 @@ function App() {
         )
       }
       <Navbar />
-      <Projects/>
       <Routes />
     </div>
   );

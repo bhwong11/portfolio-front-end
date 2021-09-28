@@ -5,6 +5,14 @@ import ProjectModel from '../models/project'
 function DeleteProject(props) {
 
     const [error,setError] = useState("")
+    const [project,setProject] = useState(null)
+
+    useEffect(function(){
+        ProjectModel.show(props.match.params.id)
+        .then(json=>{
+            setProject(json.project)
+        })
+    },[])
 
   function handleSubmit(event) {
     setError("")
@@ -28,7 +36,7 @@ function DeleteProject(props) {
   return (
     <div className='form-container'>
         {error?<div>{error}</div>:<></>}
-      <h2>Are you sure you want to delete?</h2>
+      <h2>Are you sure you want to delete {project?(project.title):(<span>loading...</span>)}?</h2>
       <button onClick={handleCancel}>Cancel</button>
       <form onSubmit={handleSubmit}>
         <input className='button is-link' type='submit' value='Delete' />

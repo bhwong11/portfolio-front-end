@@ -1,8 +1,13 @@
 const url = 'http://localhost:4000/api';
 
 class UserModel {
-    static show(id){
-        return fetch(`${url}/users/${id}`).then(response=>response.json())
+    static show(){
+        return fetch(`${url}/users/`,{
+            method:'GET',
+            headers:{
+                authorization:`Bearer ${localStorage.uid}`
+            }
+        }).then(response=>response.json())
     }
 
     static update(id,data){

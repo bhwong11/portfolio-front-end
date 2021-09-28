@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import React,{useState,useEffect} from "react";
 import Projects from './components/projects'
+import Routes from './config/routes'
+import Navbar from './nav/navbar'
 
 
 function App() {
@@ -28,7 +30,9 @@ function App() {
           <h3>loading...</h3>
         )
       }
+      <Navbar />
       <Projects/>
+      <Routes />
     </div>
   );
 }

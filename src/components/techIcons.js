@@ -5,8 +5,8 @@ function TechIcon(props){
 
     return(
         <div class = "tech-icon">
-            Tech Icon
             <image src = {props.image} alt={props.title}/>
+            <div className = "tech-icon__wrapper">{props.title}</div>
         </div>
 
     )

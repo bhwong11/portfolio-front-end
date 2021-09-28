@@ -7,6 +7,7 @@ import About from '../components/about';
 import Skills from '../components/skills';
 import Resume from '../components/resume';
 import Contact from '../components/contact';
+import Footer from '../components/footer';
 
 
 function Home(props) {
@@ -29,6 +30,7 @@ function Home(props) {
     <Projects projects ={projects} />
     <Resume/>
     <Contact/>
+    <Footer/>
     </>
     ):(
       <div>Loading...</div>

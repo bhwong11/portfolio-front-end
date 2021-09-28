@@ -4,13 +4,10 @@ import '../css/about.css'
 function About(){
 
     return(
-        <div id = "about">
+        <div id = "about" className="hero-body">
             <div class="about__description">
-                <div>About</div>
+                <div class="about__section_title">Nice To Meet You! I'm Bryant</div>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nulla assumenda totam, atque quod molestias officia doloremque cum natus, labore quidem! Maxime maiores quos vel ratione, totam debitis. Suscipit, est.
-            </div>
-            <div class="about__image_container">
-                <img class="about__image" src="https://i.imgur.com/rNFnofu.png" alt="headshot"/>
             </div>
         </div>
 

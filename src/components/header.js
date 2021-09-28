@@ -4,10 +4,13 @@ import '../css/header.css'
 function Header(){
 
     return(
-        <div id = "header" >
+        <div id = "header" className="hero is-white has-text-centered" >
             <div>
-                <div class="header__name">Bryant Wong</div>
-                <div class="header__title">Web Developer</div>
+                <div className="header__wrapper" >
+                    <img className="header__headshot" src="https://i.imgur.com/SPcVD7J.jpg" alt="alt text"/>
+                </div>
+                <div className="header__name animate__animated animate__pulse">Bryant Wong</div>
+                <div className="header__title">Web Developer, Front-End and Back-End</div>
             </div>
         </div>
 

@@ -32,41 +32,48 @@ function Navbar(props) {
 
   return (
     <header>
-      <HashLink exact to='/'>
-        Home
-      </HashLink>
-      <HashLink exact to='/#about'>
-        about
-      </HashLink>
-      <HashLink exact to='/#skills'>
-        skills
-      </HashLink>
-      <HashLink exact to='/#projects'>
-        projects
-      </HashLink>
-      <HashLink exact to='/#resume'>
-        resume
-      </HashLink>
-      <HashLink exact to='/#contact'>
-        contact
-      </HashLink>
-      <nav className='top-navigation__right'>
-        {user ? (
-          <>
-            <NavLink exact to='/projects/new'>
-              new project
-            </NavLink>
-            <NavLink exact to='/projects'>
-              Projects
-            </NavLink>
+    <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div className="container">
+        <div className="navbar-brand">
+          
+          <a className="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+        <div className="navbar-menu" id="navMenu">
+          <div className="navbar-start"></div>
+          <div className="navbar-end">
+          <HashLink className="navbar-item" exact to='/#about'>
+            about
+          </HashLink>
+          <HashLink className="navbar-item" exact to='/#skills'>
+            skills
+          </HashLink>
+          <HashLink className="navbar-item" exact to='/#projects'>
+            projects
+          </HashLink>
+          <HashLink className="navbar-item" exact to='/#resume'>
+            resume
+          </HashLink>
+            {user ? (
+              <>
+                <NavLink className="navbar-item" exact to='/projects/new'>
+                  new project
+                </NavLink>
+                <NavLink className="navbar-item" exact to='/projects'>
+                  Projects
+                </NavLink>
 
-            <button onClick={logout}>Logout</button>
-          </>
-        ) : (
-          <>
-          </>
-        )}
-      </nav>
+                <button onClick={logout}>Logout</button>
+              </>
+            ) : (
+              <>
+              </>
+            )}
+            <div className="navbar-item"><HashLink className="button is-primary is-outlined is-rounded" href="/contact" exact to='/#contact'>
+            contact
+          </HashLink></div>
+          </div>
+        </div>
+      </div>
+    </nav>
     </header>
   );
 }

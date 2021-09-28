@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import ProjectModel from '../models/project'
 import Project from './project'
+import '../css/projects.css'
 
 function Projects(){
 
@@ -21,12 +22,12 @@ function Projects(){
     return(
         <div id = "projects">
             {
-            projects? <div>
+            projects? <div class="projects__container">
                 {generateProjects()}
             </div>:
             <div>
                 loading projects...
-                </div>
+            </div>
         }
         </div>
 

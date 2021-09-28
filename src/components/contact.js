@@ -20,7 +20,7 @@ function Contact(){
         }
   
         if(json.status===200){
-            setSuccess(json.message)
+            setSuccess('Successfully Sent!')
         }
         console.log(json)
       })
@@ -63,11 +63,11 @@ function Contact(){
             <label className='label' htmlFor='content'>
               content
             </label>
-            <input
+            <textarea
               className='input'
               type='text'
               name='content'
-              placeholder='content'
+              placeholder='message content'
               required
               onChange={e => setContent(e.target.value)}
               value={content}

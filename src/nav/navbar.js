@@ -28,7 +28,7 @@ function Navbar(props) {
       }else{
           console.log("no token")
       }
-  },[user])
+  },[])
 
   return (
     <header>

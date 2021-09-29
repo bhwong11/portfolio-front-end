@@ -33,7 +33,10 @@ function Home(props) {
     <Footer/>
     </>
     ):(
-      <div className="load_screen"><p>Loading...</p></div>
+      <div className="load_screen_container">
+        <div className="load_spinner"></div>
+        <p className="loading_text">loading..</p>
+      </div>
     )}
     </>
     );

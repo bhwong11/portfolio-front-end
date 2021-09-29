@@ -8,6 +8,7 @@
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
+  font-weight: bold;
 }
 
 .project__link_wrapper{

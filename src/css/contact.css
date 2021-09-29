@@ -3,6 +3,10 @@
     --white-bg-color: #fff;
     --green-text-color:#00D1B2;
 }
+
+#contact{
+    padding: 0 10vw;
+}
 .contact__title{
     font-size: 1.2rem;
     font-family: 'Maven Pro', sans-serif;
@@ -26,4 +30,8 @@ input.button{
     background-color: var(--white-bg-color);
     color:var(--purple-bg-color);
     border:1px solid var(--purple-bg-color);
+}
+.label{
+    display:flex;
+    justify-content: start;
 }

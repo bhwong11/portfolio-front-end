@@ -1,5 +1,15 @@
+:root{
+    --purple-bg-color: #7510F7;
+    --white-bg-color: #fff;
+    --green-text-color:#00D1B2;
+}
 .projects__container{
     display:flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+.project__title{
+    font-size: 1.2rem;
+    font-family: 'Maven Pro', sans-serif;
+    padding-bottom: 20px;
 }

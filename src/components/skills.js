@@ -17,6 +17,7 @@ function Skills(){
             <TechIcon title="JSON" image="image"/>
             <TechIcon title="DTL" image="image"/>
             <TechIcon title="EJS" image="image"/>
+            <TechIcon title="TypeScript" image="image"/>
             <TechIcon title="MongoDB" image="image"/>
             <TechIcon title="postgreSQL" image="image"/>
             <TechIcon title="React" image="image"/>
@@ -27,6 +28,7 @@ function Skills(){
             <TechIcon title="Bootstrap" image="image"/>
             <TechIcon title="Sematic UI" image="image"/>
             <TechIcon title="Bulma" image="image"/>
+            <TechIcon title="Sass" image="image"/>
             </div>
         </div>
     )

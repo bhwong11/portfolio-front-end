@@ -21,7 +21,7 @@ function Projects(props){
 
     return(
         <div id = "projects">
-            <h2>Projects</h2>
+            <div className="project__title">Projects</div>
             {
             projects? <div class="projects__container">
                 {generateProjects()}

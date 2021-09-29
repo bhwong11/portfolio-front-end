@@ -32,7 +32,7 @@ function Navbar(props) {
 
   return (
     <header>
-    <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <nav className="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
           

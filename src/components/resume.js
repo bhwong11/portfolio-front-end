@@ -1,10 +1,12 @@
 import React,{useState,useEffect} from 'react';
+import '../css/resume.css'
 
 function Resume(){
 
     return(
-        <div id = "resume">
-            <a href="/bryant_wong_resume.pdf" target="_blank">Resume</a>
+        <div id = "resume" className="hero-body">
+            <h3 className="resume__title">Want To Work Togther?</h3>
+            <a className="resume_link button is-outlined" href="/bryant_wong_resume.pdf" target="_blank">View Resume</a>
         </div>
     )
 }

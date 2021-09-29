@@ -17,8 +17,8 @@ function Project(props){
                 <h3 className = "project__title">{props.project.title}</h3>
                 <p className = "project__description">{props.project.description}</p>
                 <div className = "project__link_wrapper">
-                <div className = "project__live_link"><a href={props.project.liveLink} target="_blank" >Live Demo</a></div>
-                <div className = "project__github"><a href={props.project.github} target="_blank" >GitHub</a></div>
+                <a href={props.project.liveLink} className = "project__live_link button is-outlined" target="_blank" >Live Demo</a>
+                <a className = "project__github button is-outlined" href={props.project.github} target="_blank" >GitHub</a>
                 </div>
             </div>
         </div>

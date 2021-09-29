@@ -59,7 +59,7 @@ function UpdateProject(props) {
           Description
           </label>
           <textarea
-            className='input'
+            className='textarea'
             name='description'
             onChange={e => setDescription(e.target.value)}
             value = {description}

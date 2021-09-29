@@ -4,11 +4,11 @@ import "../css/footer.css"
 function Footer(){
 
     return(
-        <div id = "footer">
+        <footer id = "footer">
             <div>linkedin</div>
             <div>Github</div>
             <div>Email</div>
-        </div>
+        </footer>
     )
 }
 

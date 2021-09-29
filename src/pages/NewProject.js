@@ -62,7 +62,7 @@ function NewProject(props) {
             Live Link
           </label>
           <input
-            className='input'
+            className='textarea'
             type='text'
             name='liveLink'
             placeholder='project liveLink'

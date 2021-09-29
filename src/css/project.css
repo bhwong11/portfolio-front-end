@@ -15,8 +15,8 @@
   justify-content: space-evenly;
 }
 
-.project__link_wrapper div{
-  padding: 10px;
+.project__link_wrapper a{
+  margin: 10px;
 }
 
 .project__card_title{
@@ -24,6 +24,17 @@
   justify-content: center;
   align-items: center;
   padding:30px;
+}
+
+.button{
+  background-color: var(--green-text-color);
+  color:var(--white-bg-color);
+  transition: .5s ease-out;
+  margin:20px;
+}
+.button:hover {
+  background-color: var(--white-bg-color);
+  color:var(--green-text-color);
 }
 
 .flip-card {

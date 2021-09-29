@@ -1,0 +1,12 @@
+:root{
+    --purple-bg-color: #7510F7;
+    --white-bg-color: #fff;
+    --green-text-color:#00D1B2;
+}
+#footer{
+    display:flex;
+    justify-content: center;
+}
+#footer *{
+    margin:10px;
+}

@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import MailModel from '../models/mail'
+import '../css/contact.css'
 
 function Contact(){
 
@@ -27,10 +28,11 @@ function Contact(){
     }
   
     return (
-      <div id="contact">
+      <div id="contact" className="hero-body">
+        <h3 className="contact__title">Contact</h3>
+        <hr/>
           {error?<div>{error}</div>:<></>}
           {success?<div>{success}</div>:<></>}
-        <h2>Contact</h2>
         <form onSubmit={handleSubmit}>
           <div className='field'>
             <label className='label' htmlFor='subject'>
@@ -64,17 +66,18 @@ function Contact(){
               content
             </label>
             <textarea
-              className='input'
+              className='textarea contact__message_content'
               type='text'
               name='content'
               placeholder='message content'
               required
               onChange={e => setContent(e.target.value)}
               value={content}
-            />
+            >
+            </textarea>
           </div>              
   
-          <input className='button is-link' type='submit' value='Send Email' />
+          <input className='button is-outlined' type='submit' value='Send Message' />
         </form>
       </div>
     );

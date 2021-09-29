@@ -1,4 +1,4 @@
-const url = 'http://localhost:4000/api/auth';
+const url = 'https://bryanthwong-portfolio-backend.herokuapp.com/api/';
 
 class Auth{
     static register(data){

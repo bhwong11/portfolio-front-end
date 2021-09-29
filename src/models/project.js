@@ -1,4 +1,4 @@
-const url = 'http://localhost:4000/api';
+const url = 'https://bryanthwong-portfolio-backend.herokuapp.com/api';
 
 class ProjectModel{
     static all(){

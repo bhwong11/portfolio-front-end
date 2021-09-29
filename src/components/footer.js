@@ -6,8 +6,8 @@ function Footer(){
 
     return(
         <footer id = "footer">
-            <a href="https://github.com/bhwong11" target="_blank"><FaGithubSquare/></a>
-            <a href="https://www.linkedin.com/in/bryanthwong" target="_blank"><FaLinkedinIn/></a>
+            <a href="https://github.com/bhwong11" target="_blank" rel="noreferrer"><FaGithubSquare/></a>
+            <a href="https://www.linkedin.com/in/bryanthwong" target="_blank" rel="noreferrer"><FaLinkedinIn/></a>
             <div className="footer__email">Bryanthwong@gmail.com</div>
         </footer>
     )

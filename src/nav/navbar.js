@@ -36,7 +36,7 @@ function Navbar(props) {
       <div className="container">
         <div className="navbar-brand">
           
-          <a className="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
+          <div className="navbar-burger" role="button" aria-label="menu" aria-expanded="false" data-target="#navMenu"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></div></div>
         <div className="navbar-menu" id="navMenu">
           <div className="navbar-start"></div>
           <div className="navbar-end">

@@ -52,7 +52,7 @@ function Contact(){
         <form onSubmit={handleSubmit}>
           <div className='field'>
             <label className='label' htmlFor='subject'>
-              subject
+              Subject
             </label>
             <input
               className='input'
@@ -65,7 +65,7 @@ function Contact(){
           </div>
           <div className='field'>
             <label className='label' htmlFor='email'>
-              email
+              Email
             </label>
             <input
               className='input'
@@ -79,13 +79,13 @@ function Contact(){
           </div>
           <div className='field'>
             <label className='label' htmlFor='content'>
-              content
+              Message
             </label>
             <textarea
               className='textarea contact__message_content'
               type='text'
               name='content'
-              placeholder='message content'
+              placeholder='Message Content'
               required
               onChange={e => setContent(e.target.value)}
               value={content}

@@ -13,13 +13,13 @@
     font-family: 'Maven Pro', sans-serif;
 }
 
-.resume_link{
+.resume_link.button{
     background-color: var(--purple-bg-color);
     color:var(--white-bg-color);
     transition: .5s ease-out;
     margin:20px;
 }
-.resume_link:hover {
+.resume_link.button:hover {
     background-color: var(--white-bg-color);
     color:var(--purple-bg-color);
 }

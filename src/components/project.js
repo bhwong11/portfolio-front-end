@@ -15,8 +15,10 @@ function Project(props){
             </div>
             <div class="flip-card-back">
                 <h3 className = "project__title">{props.project.title}</h3>
+                <p className="project__info">Tech Used:</p>
                 <p className = "project__description">{props.project.description.split(')')[0]+')'}</p>
                 <br/>
+                <p className="project__info">Description:</p>
                 <p className = "project__description">{props.project.description.split(')')[1]}</p>
                 <div className = "project__link_wrapper">
                 <a href={props.project.liveLink} className = "project__live_link button is-outlined" target="_blank" rel="noreferrer" >Live Demo</a>

@@ -27,6 +27,10 @@
   padding:30px;
 }
 
+.project__info{
+  font-weight: 100;
+}
+
 .button{
   background-color: var(--green-text-color);
   color:var(--white-bg-color);

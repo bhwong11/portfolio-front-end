@@ -1,0 +1,53 @@
+:root{
+  --purple-bg-color: #7510F7;
+  --white-bg-color: #fff;
+  --green-text-color:#00D1B2;
+}
+#about{
+    scroll-margin-top: 96px;
+  }
+#skills{
+    scroll-margin-top: 96px;
+  }
+#projects{
+    scroll-margin-top: 96px;
+  }
+#resume{
+    scroll-margin-top: 96px;
+  }
+#contact{
+    scroll-margin-top: 96px;
+  }
+
+.load_screen_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_text{
+  margin-top: 96px;
+  color:var(--purple-bg-color);
+  font-size: 1.2rem;
+}
+
+.load_spinner {
+  margin-top: 96px;
+  color:var(--purple-bg-color);
+  border: 16px solid var(--purple-bg-color);
+  border-top: 16px solid var(--green-text-color);
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0%  { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#root{
+  font-family: 'Roboto', sans-serif;
+}

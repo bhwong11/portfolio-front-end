@@ -21,3 +21,9 @@ input.button{
     color:var(--white-bg-color);
     border: 1px solid var(--purple-bg-color);
 }
+
+.sending.button{
+    background-color: var(--white-bg-color);
+    color:var(--purple-bg-color);
+    border:1px solid var(--purple-bg-color);
+}

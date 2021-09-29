@@ -9,21 +9,27 @@ function Contact(){
     const [content, setContent] = useState("");
     const [success, setSuccess] = useState("");
     const [error,setError] = useState("")
+    const [sending,setSending] = useState(false)
   
     function handleSubmit(event) {
       setError("")
       setSuccess("")
+      setSubject("")
+      setEmail("")
+      setContent("")
+      setSending(true)
       event.preventDefault();
       const formData = {subject,email,content};
       MailModel.send(formData).then(json=>{
         if(json.status === 400 || json.status===500){
           setError(json.message)
+          setSending(false)
         }
   
         if(json.status===200){
             setSuccess('Successfully Sent!')
+            setSending(false)
         }
-        console.log(json)
       })
     }
   
@@ -31,8 +37,18 @@ function Contact(){
       <div id="contact" className="hero-body">
         <h3 className="contact__title">Contact</h3>
         <hr/>
-          {error?<div>{error}</div>:<></>}
-          {success?<div>{success}</div>:<></>}
+        
+          {error?<article class="message is-danger">
+
+          <div class="message-body">
+            {error}
+          </div>
+        </article>:<></>}
+          {success?<article class="message is-success">
+          <div class="message-body">
+            {success}
+          </div>
+        </article>:<></>}
         <form onSubmit={handleSubmit}>
           <div className='field'>
             <label className='label' htmlFor='subject'>
@@ -76,8 +92,11 @@ function Contact(){
             >
             </textarea>
           </div>              
-  
-          <input className='button is-outlined' type='submit' value='Send Message' />
+          {sending?(
+            <div className="button sending">sending...</div>
+          ):(
+            <input className='button is-outlined' type='submit' value='Send Message' />
+          )} 
         </form>
       </div>
     );

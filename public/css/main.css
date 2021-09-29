@@ -1,3 +1,8 @@
+:root{
+  --purple-bg-color: #7510F7;
+  --white-bg-color: #fff;
+  --green-text-color:#00D1B2;
+}
 #about{
     scroll-margin-top: 96px;
   }
@@ -13,3 +18,7 @@
 #contact{
     scroll-margin-top: 96px;
   }
+.load_screen{
+  margin-top: 96px;
+  color:var(--purple-bg-color);
+}

@@ -33,7 +33,7 @@ function Home(props) {
     <Footer/>
     </>
     ):(
-      <div>Loading...</div>
+      <div className="load_screen"><p>Loading...</p></div>
     )}
     </>
     );

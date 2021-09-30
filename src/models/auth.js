@@ -1,8 +1,8 @@
-const url = 'https://bryanthwong-portfolio-backend.herokuapp.com/api/';
+const url = 'https://bryanthwong-portfolio-backend.herokuapp.com/api';
 
 class Auth{
     static register(data){
-        return fetch(`${url}/register`,{
+        return fetch(`${url}/auth/register`,{
             method:'POST',
             body:JSON.stringify(data),
             headers:{
@@ -12,7 +12,7 @@ class Auth{
     }
 
     static login(data){
-        return fetch(`${url}/login`,{
+        return fetch(`${url}/auth/login`,{
             method:'POST',
             body:JSON.stringify(data),
             headers:{

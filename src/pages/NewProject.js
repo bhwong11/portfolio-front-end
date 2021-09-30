@@ -27,7 +27,7 @@ function NewProject(props) {
   }
 
   return (
-    <div className='form-container'>
+    <div className='form-container crud_page'>
         {error?<div>{error}</div>:<></>}
       <h2>New Project</h2>
       <form onSubmit={handleSubmit}>

@@ -39,7 +39,7 @@ function Login(props) {
   let isLoggin = useRecoilValue(logginState);
 
   return (
-    <div className='form-container'>
+    <div className='form-container crud_page'>
       <h2>Login</h2>
       {error? <div>{error}</div>:<></>}
       <form onSubmit={handleSubmit}>

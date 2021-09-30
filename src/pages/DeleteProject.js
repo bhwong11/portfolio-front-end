@@ -34,7 +34,7 @@ function DeleteProject(props) {
   }
 
   return (
-    <div className='form-container'>
+    <div className='form-container crud_page'>
         {error?<div>{error}</div>:<></>}
       <h2>Are you sure you want to delete {project?(project.title):(<span>loading...</span>)}?</h2>
       <button onClick={handleCancel}>Cancel</button>

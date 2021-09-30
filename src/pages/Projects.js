@@ -14,7 +14,7 @@ function Projects(){
 
     const generateProjects = ()=>{
         return projects.reverse().map(project=>{
-            return (<div>
+            return (<div className='crud_page'>
             <h3>{project.title}</h3>
             <p>{project.image}</p>
             <Link to={`/projects/${project._id}/update`} >update Project</Link>

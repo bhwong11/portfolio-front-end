@@ -17,3 +17,6 @@
     margin:10px;
     color:var(--purple-bg-color);
 }
+#footer a:hover{
+    filter: brightness(150%);
+}

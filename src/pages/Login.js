@@ -26,9 +26,7 @@ function Login(props) {
       if(json.status===200){
         localStorage.setItem("uid", json.token);
         UserModel.show().then(json=>{
-          console.log(json)
           setUser(json.data)
-          console.log('IS LOGIN',isLoggin)
           props.history.push('/projects')
         })
       }

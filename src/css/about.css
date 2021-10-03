@@ -9,7 +9,7 @@
     flex-direction: row;
     justify-content: center;
     background-color: var(--purple-bg-color);
-    height: 50vh;
+    min-height: 45vh;
     color:var(--white-bg-color);
 }
 

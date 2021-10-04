@@ -3,6 +3,9 @@
   --white-bg-color: #fff;
   --green-text-color:#00D1B2;
 }
+html {
+  scroll-behavior: smooth;
+}
 #about{
     scroll-margin-top: 96px;
   }

@@ -24,6 +24,8 @@ function Navbar(props) {
           UserModel.show().then(json=>{
               console.log(json)
               setUser(json.data)
+          }).catch((err)=>{
+            console.log(`error occured ${err}`)
           })
       }else{
           console.log("no token")

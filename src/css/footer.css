@@ -7,6 +7,16 @@
 #footer{
     display:flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.footer__title{
+    font-size: 1.2rem;
+    font-family: 'Maven Pro', sans-serif;
+}
+.footer__icons-wrapper{
+    display:flex;
+    justify-content: center;
 }
 
 .footer__email{

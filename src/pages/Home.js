@@ -29,7 +29,7 @@ function Home(props) {
     <Skills/>
     <Projects projects ={projects} />
     <Resume/>
-    <Contact/>
+    {/* <Contact/> */}
     <Footer/>
     </>
     ):(

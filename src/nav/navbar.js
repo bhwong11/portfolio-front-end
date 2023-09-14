@@ -8,7 +8,6 @@ import { HashLink } from 'react-router-hash-link';
 
 function Navbar(props) {
   const [user, setUser] = useRecoilState(userState);
-  function login() {}
   function logout() {
     setUser(null);
     localStorage.clear()
@@ -54,7 +53,7 @@ function Navbar(props) {
           <HashLink className="navbar-item" exact to='/#resume'>
             resume
           </HashLink>
-            {user ? (
+            {user && (
               <>
                 <NavLink className="navbar-item" exact to='/projects/new'>
                   new project
@@ -65,11 +64,8 @@ function Navbar(props) {
 
                 <button onClick={logout}>Logout</button>
               </>
-            ) : (
-              <>
-              </>
             )}
-            <div className="navbar-item"><HashLink className="button is-primary is-outlined is-rounded" href="/contact" exact to='/#contact'>
+            <div className="navbar-item"><HashLink className="button is-primary is-outlined is-rounded" href="/contact" exact to='/#footer'>
             contact
           </HashLink></div>
           </div>

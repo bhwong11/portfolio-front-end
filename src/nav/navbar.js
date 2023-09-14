@@ -61,7 +61,6 @@ function Navbar(props) {
                 <NavLink className="navbar-item" exact to='/projects'>
                   Projects
                 </NavLink>
-
                 <button onClick={logout}>Logout</button>
               </>
             )}

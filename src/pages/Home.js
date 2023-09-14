@@ -10,7 +10,7 @@ import Contact from '../components/contact';
 import Footer from '../components/footer';
 
 
-function Home(props) {
+function Home() {
 
   const [projects,setProjects] = useState(null)
 

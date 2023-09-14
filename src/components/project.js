@@ -19,7 +19,9 @@ function Project(props){
                 <br/>
                 <p className = "project__description">{props.project.description.split(')')[1]}</p>
                 <div className = "project__link_wrapper">
-                <a href={props.project.liveLink} className = "project__live_link button is-outlined" target="_blank" rel="noreferrer" >Live Demo</a>
+                {props.project.liveLink && 
+                    <a href={props.project.liveLink} className = "project__live_link button is-outlined" target="_blank" rel="noreferrer" >Live Demo</a>
+                }
                 <a className = "project__github button is-outlined" href={props.project.github} target="_blank" rel="noreferrer" >GitHub</a>
                 </div>
             </div>

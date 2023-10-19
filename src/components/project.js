@@ -22,7 +22,9 @@ function Project(props){
                 {props.project.liveLink && 
                     <a href={props.project.liveLink} className = "project__live_link button is-outlined" target="_blank" rel="noreferrer" >Live Demo</a>
                 }
-                <a className = "project__github button is-outlined" href={props.project.github} target="_blank" rel="noreferrer" >GitHub</a>
+                {props.project.github && 
+                    <a className = "project__github button is-outlined" href={props.project.github} target="_blank" rel="noreferrer" >GitHub</a>
+                }
                 </div>
             </div>
         </div>

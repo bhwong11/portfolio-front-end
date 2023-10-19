@@ -9,6 +9,14 @@ class ProjectModel{
             _=>({
                 "projects": [
                 {
+                    "_id": "617334a5ecd6dd3a2ede6359",
+                    "title": "Splendor Board Game",
+                    "description": "(Next.js, Typescript, Zustand, Nodejs, MongoDB, NoSql)An Online version of the resource management board game Splendor! Candy themed. (similiar to the game Cantan)",
+                    "github": "https://github.com/bhwong11/splendor",
+                    "image": "https://i.imgur.com/dKOEoRQ.png",
+                    "__v": 0
+                },
+                {
                     "_id": "617334a5ecd6dd3a2ede6358",
                     "title": "Quiz App",
                     "description": "(Reactjs, Redux, Nodejs, Typescript,  MongoDB, NoSql)A quiz game where users can play trivia quiz games of various difficulty, save scores, and see top ranking players. ",

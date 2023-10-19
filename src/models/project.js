@@ -9,18 +9,18 @@ class ProjectModel{
             _=>({
                 "projects": [
                 {
-                    "_id": "6153a5b982b7f9fa0a770b91",
-                    "title": "Splendid Spoon Meal Delivery(Contributing Engineer)",
-                    "description": "(Reactjs, Redux, HTML, SASS, Django) An E-commerce site for weekly plant-based meal delivery, contributed to cart logic, several page implementataions, subscription logic, and meal API logic",
-                    "image": "https://i.imgur.com/KimwQrn.png",
-                    "__v": 0
-                },
-                {
                     "_id": "617334a5ecd6dd3a2ede6359",
                     "title": "Splendor Board Game",
                     "description": "(Next.js, Typescript, Zustand, Nodejs, MongoDB, NoSql)An Online version of the resource management board game Splendor! Candy themed. (similiar to the game Cantan)",
                     "github": "https://github.com/bhwong11/splendor",
                     "image": "https://i.imgur.com/dKOEoRQ.png",
+                    "__v": 0
+                },
+                {
+                    "_id": "6153a5b982b7f9fa0a770b91",
+                    "title": "Splendid Spoon Meal Delivery(Contributing Engineer)",
+                    "description": "(Reactjs, Redux, HTML, SASS, Django) An E-commerce site for weekly plant-based meal delivery, contributed to cart logic, several page implementataions, subscription logic, and meal API logic",
+                    "image": "https://i.imgur.com/KimwQrn.png",
                     "__v": 0
                 },
                 {

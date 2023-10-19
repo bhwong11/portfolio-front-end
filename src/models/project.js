@@ -57,14 +57,14 @@ class ProjectModel{
                     "image": "https://i.imgur.com/fTq64JW.png",
                     "__v": 0
                 },
-                // {
-                //     "_id": "6153a55b82b7f9fa0a770b87",
-                //     "title": "Projectly",
-                //     "description": "(Express, Node.js, MongoDB, Mongoose, bootstrap 5, javascript, Sass ) A project management application where users can create accounts, tasks, and groups of tasks, with a timer on how long to complete a task. Completed in a team of 2 within one week.",
-                //     "github": "https://github.com/bhwong11/Projectly",
-                //     "image": "https://i.imgur.com/9VTBSBG.png",
-                //     "__v": 0
-                // },
+                {
+                    "_id": "6153a55b82b7f9fa0a770b87",
+                    "title": "Projectly",
+                    "description": "(Express, Node.js, MongoDB, Mongoose, bootstrap 5, javascript, Sass ) A project management application where users can create accounts, tasks, and groups of tasks, with a timer on how long to complete a task. Completed in a team of 2 within one week.",
+                    "github": "https://github.com/bhwong11/Projectly",
+                    "image": "https://i.imgur.com/9VTBSBG.png",
+                    "__v": 0
+                },
                 {
                     "_id": "6153a5b982b7f9fa0a770b90",
                     "title": "Pokemon Pet Game",

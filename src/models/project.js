@@ -14,6 +14,7 @@ class ProjectModel{
                     "description": "(Next.js, Typescript, Zustand, Nodejs, MongoDB, NoSql)An Online version of the resource management board game Splendor! Candy themed. (similiar to the game Cantan)",
                     "github": "https://github.com/bhwong11/splendor",
                     "image": "https://i.imgur.com/dKOEoRQ.png",
+                    "liveLink": "https://splendor-new.vercel.app/",
                     "__v": 0
                 },
                 {
